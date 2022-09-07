@@ -75,10 +75,11 @@ public class Main {
     public static void homeWork9(){
         System.out.println("Задача 9");
         int money = 29000;
-        int bank = 0;
+        double bank = 0;
+        double percent = 0.01;
         for (int i = 1; i <= 12 ; i ++) {
-            bank = bank  + bank/ 100;
-            bank = bank + money;
+            bank = (bank + money) * (1 + percent);
+
             System.out.println("Месяц " + i + " ,сумма накоплений равна " + bank + " рублей");
         }
         System.out.println();
